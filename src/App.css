@@ -1,38 +1,48 @@
+*{
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap');
+}
 .App {
+  margin-left: 38%;
+  width: fit-content;
   text-align: center;
+  font-family: 'Caveat', cursive;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App input{
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  font-family: 'Caveat', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ 
+.add{
+  padding: 8px 20px;
+  border-radius: 10px;
+  color: green;
+  font-weight: bold;
+  font-family: 'Caveat', cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.del{
+  padding: 5px 3px;
+  border-radius: 6px;
+  margin: 10px;
+  color: red;
+  font-weight: bold;
+  font-family: 'Caveat', cursive;
+}
+.del:hover{
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  
+ }
+.add:hover{
+  cursor: pointer;
+  background-color: green;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ 
+ 

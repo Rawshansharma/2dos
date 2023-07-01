@@ -23,10 +23,17 @@ function App() {
     const newArray = items.filter(item  => item.id !== id);
     setItems(newArray);
   }
+  function enterkeypress(e) {
+    if(e.keyCode === 13){
+      addItem()
+    }
+  }
   return (
     <div className="App">
        <h1>ToDo List App</h1>
-       <input onChange={e => setNewItem(e.target.value)} type="text" placeholder="enter your todos...." />
+       <input 
+       onKeyDown={enterkeypress}
+       value={newItem} onChange={e => setNewItem(e.target.value)} type="text" placeholder="enter your todos...." />
        <button className='add' onClick={() => addItem()} type="submit">Add</button>
       <ol>
         {items.map(item => {
